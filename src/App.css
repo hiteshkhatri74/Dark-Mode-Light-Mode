@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
+[data-theme="light"] {
+  --bg-color: #ffffff;
+  --text-color:#333333;
+  --heading-color:#444444;
+}
+[data-theme="dark"]{
+  --bg-color:#333333;
+  --text-color:#ffffff;
+  --heading-color:#dddddd;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color:var(--bg-color);
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0 30px;
+}
+h1{
+  color: var(--heading-color);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.page {
   display: flex;
   flex-direction: column;
+  height: 92vh;
+}
+
+.navbar {
+  height: 8vh;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.navbar div {
+  display: flex;
+  gap: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar a{
+  text-decoration: none;
+  color: inherit;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.mode-switch label {
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  position: relative;
+  margin-left: 10px;
+}
+
+.mode-switch .slider{
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 20px;
+}
+
+.mode-switch input:checked + .slider {
+  background-color: #2196f3;
+}
+
+.mode-switch .slider:before {
+  position:absolute;
+  content:"";
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius:  50%;
+}
+
+.mode-switch input:checked + .slider:before {
+  transform: translate(20px);
 }
