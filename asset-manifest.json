@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Dark-Mode-Light-Mode/static/css/main.f763eeb1.css",
+    "main.js": "/Dark-Mode-Light-Mode/static/js/main.5d1c342d.js",
+    "static/js/453.3d4c9fc4.chunk.js": "/Dark-Mode-Light-Mode/static/js/453.3d4c9fc4.chunk.js",
+    "index.html": "/Dark-Mode-Light-Mode/index.html",
+    "main.f763eeb1.css.map": "/Dark-Mode-Light-Mode/static/css/main.f763eeb1.css.map",
+    "main.5d1c342d.js.map": "/Dark-Mode-Light-Mode/static/js/main.5d1c342d.js.map",
+    "453.3d4c9fc4.chunk.js.map": "/Dark-Mode-Light-Mode/static/js/453.3d4c9fc4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f763eeb1.css",
+    "static/js/main.5d1c342d.js"
+  ]
+}
